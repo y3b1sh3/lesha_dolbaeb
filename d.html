@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лёша — долбоёб</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --fg: #111;
+      --accent: #d4af37;
+      --muted: #777;
+      --dark: #111;
+      --gold: #d4af37;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      scroll-behavior: smooth;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #000, #333);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      background-color: var(--accent);
+      border: none;
+      padding: 1rem 2.5rem;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #c29b2d;
+    }
+    section {
+      padding: 5rem 2rem;
+      animation: fadeIn 0.6s ease forwards;
+      width: 100%;
+    }
+    .section-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section h2.section-title {
+      text-align: center;
+      font-size: 2.7rem;
+      margin-bottom: 3rem;
+    }
+    .dark-section {
+      background-color: var(--dark);
+      color: white;
+    }
+    .gold-section {
+      background: linear-gradient(145deg, #fff8dc, #e6c56a);
+      color: #111;
+    }
+    img.hero-img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 2rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    blockquote {
+      font-style: italic;
+      color: var(--muted);
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      margin: 2rem 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "— ";
+      color: var(--accent);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Лёша — долбоёб</h1>
+    <button class="btn" onclick="document.getElementById('lesha-section').scrollIntoView({behavior: 'smooth'})">Изучить Лёшу</button>
+  </header>
+
+  <section id="lesha-section" class="gold-section">
+    <div class="section-inner">
+      <h2 class="section-title">Так почему же Алексей — долбоёб?</h2>
+      <p>Алексей — это не просто человек. Это культурное явление. Он — своего рода феномен, симбиоз случайности, неудачи и удивительного постоянства в глупости. Он — как анекдот, только живой.</p>
+      <p>Когда учёные наблюдали за его действиями в Valorant, особенно его стрельбой, они не могли поверить в увиденное. Это был редчайший случай одновременного попадания и отсутствия малейшего понимания происходящего. Компьютер стал для него не инструментом, а клеткой, в которой он живёт, орёт и не ставит смоки.</p>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="section-inner">
+      <h2 class="section-title">Сравнение с гоблином</h2>
+      <img src="lesha.jpg" alt="Лёша-гоблин" class="hero-img">
+      <p>Мы провели сравнительный анализ. Гоблин из Clash Royale — организованное и структурированное существо. А Лёша — это его эволюционный откат. Он громкий, он высокий, он неэффективный. Но при этом уникальный. Он делает каждый день чуть абсурднее — и за это мы его любим.</p>
+    </div>
+  </section>
+
+  <section class="gold-section">
+    <div class="section-inner">
+      <h2 class="section-title">Особенности Лёши в играх</h2>
+      <p>Алексей часто общается на особом языке, понятном только ему и ближайшим сородичам. Он не осознаёт ошибки — он их оправдывает.</p>
+      <blockquote>“ДА Я ПОСТАВИЛ СМОК!”</blockquote>
+      <blockquote>“ОНО НЕ РЕГАЕТ!”</blockquote>
+      <p>Каждая катка с Лёшей — как сеанс в дурке. Он бежит, он орёт, он стреляет мимо, и в этом — его стиль. Его философия. Он Run&Gun как образ жизни. Он как банан: скользкий, яркий и почти бесполезный.</p>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="section-inner">
+      <h2 class="section-title">Контра Лёши</h2>
+      <p>У каждого босса есть слабость. У Алексея — мама. Её фраза <strong>“Я сейчас интернет вырублю”</strong> является натуральным ультимейтом, который мгновенно завершает любую игровую сессию. Ни команда, ни противник не могут противостоять этому балансу сил.</p>
+    </div>
+  </section>
+
+  <section class="gold-section">
+    <div class="section-inner">
+      <h2 class="section-title">Поддержка</h2>
+      <p>Если ты прочитал всё это и хочешь поддержать нашего латексного гения — настоятельно рекомендуем пересмотреть свои жизненные приоритеты. Но если ты хочешь дополнить досье новыми фактами, вот наши контакты:</p>
+      <ul>
+        <li>Discord: erere675</li>
+        <li>Telegram: +7 916 767 5519</li>
+        <li>WhatsApp: +7 916 767 5519</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
